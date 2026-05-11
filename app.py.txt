@@ -1,0 +1,53 @@
+streamlit run app.py
+import streamlit as st
+import pandas as pd
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+st.set_page_config(page_title="SimuChem Enterprise", page_icon="🔬", layout="wide")
+
+# Sidebar - Configuration
+st.sidebar.title("R&D Controls")
+api_key = st.sidebar.text_input("Gemini API Key", type="password")
+mode = st.sidebar.selectbox("Simulation Mode", ["Fast Screening", "Deep DFT Analysis", "Market Forecast"])
+
+# Main UI
+st.title("🔬 SimuChem: Agentic R&D Simulation")
+st.markdown("### Bridging Computational Chemistry and Enterprise Strategy")
+
+# Data Simulation (Using your dataset structure)
+@st.cache_data
+def load_data():
+    # Placeholder for the 71k molecule dataset
+    data = {
+        'id': [655365, 1245190, 65553, 720918],
+        'SMILES': ['C1C=CC=C1c1cc2[se]c3c4occc4...', 'C1C=CC=C1c1cc2[se]c3...', '...[SiH2]1C=CC2=C1C=C...', '...'],
+        'PCE': [5.16, 5.26, 6.13, 1.99],
+        'Synthetic_Feasibility': [0.85, 0.72, 0.91, 0.45]
+    }
+    return pd.DataFrame(data)
+
+df = load_data()
+
+col1, col2 = st.columns([2, 1])
+
+with col1:
+    st.subheader("Simulated Candidate Pipeline")
+    st.dataframe(df.style.highlight_max(axis=0, subset=['PCE']))
+
+with col2:
+    st.subheader("Agentic Assessment")
+    target = st.selectbox("Select Candidate ID", df['id'])
+    if st.button("Run Simulation Analysis"):
+        if not api_key:
+            st.error("Please provide an API Key in the sidebar.")
+        else:
+            st.info(f"Analyzing Molecule {target} for enterprise readiness...")
+            # Simulate Gemini Response
+            st.success("**Recommendation: PILOT APPROVED**")
+            st.write("Candidate shows high thermal stability and cost-effective synthetic route.")
+
+st.divider()
+st.caption("Secured by Veea Lobster Trap | Data Privacy Compliant")

@@ -1,0 +1,11 @@
+pip install -r requirements.txt
+---
+
+#### **File 2: `requirements.txt`**
+```text
+google-generativeai
+rdkit
+pandas
+streamlit
+python-dotenv
+pyyaml

@@ -58,7 +58,7 @@ An intelligent orchestration platform that transforms computational chemistry si
 ### 7. Slide Presentation (Standard 5-Slide Deck)
 
 <img width="323" height="877" alt="image" src="https://github.com/user-attachments/assets/63c4d64a-e908-4ea5-9329-4b1a9edb7e4e" />
-
+https://drive.google.com/file/d/1QF2_lLTD-iQANC73oqKU8uGBBNixwt6y/view?usp=sharing
 
 
 

@@ -7,7 +7,7 @@ Focus Areas:
 . anomaly detection  and forecasting . knowledge graph extraction from documents
 To ensure your submission for the **TechEx Intelligent Enterprise Solutions Hackathon** stands out as a professional, PhD-level entry, follow this finalized checklist. This is tailored to the **SimuChem-Enterprise** project we’ve developed.
 
-###1. Project Title
+### 1. Project Title
 
 **SimuChem-Enterprise: Agentic R&D Simulation & Molecular Asset Governance**
 
@@ -57,13 +57,10 @@ An intelligent orchestration platform that transforms computational chemistry si
 
 ### 7. Slide Presentation (Standard 5-Slide Deck)
 
-1. **Slide 1: Title & Vision.** (SimuChem: The Future of R&D Strategy).
-2. **Slide 2: The Data Gap.** (Illustrating the disconnect between PhD-level simulation and Executive decision-making).
-3. **Slide 3: Architecture.** (Diagram showing Gemini 1.5 Pro interacting with RDKit and Veea Lobster Trap).
-4. **Slide 4: Results.** (Snapshot of the analysis on the 71k molecule dataset).
-5. **Slide 5: Enterprise Governance.** (Focusing on IP protection and security—crucial for Track 1).
+<img width="323" height="877" alt="image" src="https://github.com/user-attachments/assets/63c4d64a-e908-4ea5-9329-4b1a9edb7e4e" />
 
----
+
+
 
 ### 8. Repository & App URLs
 
